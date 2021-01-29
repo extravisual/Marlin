@@ -89,6 +89,7 @@
   #define HEATER_BED_PIN                   P2_05
 #endif
 
+
 //
 // LCD / Controller
 //
@@ -115,3 +116,4 @@
 #elif SD_CONNECTION_IS(CUSTOM_CABLE)
   #error "No custom SD drive cable defined for this board."
 #endif
+

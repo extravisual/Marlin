@@ -81,6 +81,15 @@
 #endif
 
 //
+// Spindle/Laser Pins
+//
+// #define SPINDLE_LASER_PWM_PIN P2_07
+
+#define SPINDLE_LASER_ENA_PIN   P2_04   // digital pin
+#define SPINDLE_LASER_PWM_PIN   P2_00   // digital pin - MUST BE HARDWARE PWM
+// #define SPINDLE_DIR_PIN          zz   // digital pin
+
+//
 // Z Probe (when not Z_MIN_PIN)
 //
 #ifndef Z_MIN_PROBE_PIN
