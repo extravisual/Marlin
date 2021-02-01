@@ -495,9 +495,9 @@
  
 
   // V6 hotend
-  #define DEFAULT_Kp 27.57
-  #define DEFAULT_Ki 2.37
-  #define DEFAULT_Kd 80.11
+  #define DEFAULT_Kp 40.99
+  #define DEFAULT_Ki 3.16
+  #define DEFAULT_Kd 133.09
 
   // Ultimaker
   // #define DEFAULT_Kp 22.2
@@ -754,14 +754,14 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 79.61, 79.78, 395.81, 153.84 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 419.19 }
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 500, 500, 5, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 500, 500, 10, 50 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -983,7 +983,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { 17.504, -37.95, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { 3, 54, -2.74 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
