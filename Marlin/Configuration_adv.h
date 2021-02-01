@@ -1737,7 +1737,7 @@
  * and optionally G38.4 and G38.5 (probe away from target).
  * Set MULTIPLE_PROBING for G38 to probe more than once.
  */
-#define G38_PROBE_TARGET
+// #define G38_PROBE_TARGET
 #if ENABLED(G38_PROBE_TARGET)
   //#define G38_PROBE_AWAY        // Include G38.4 and G38.5 to probe away from target
   #define G38_MINIMUM_MOVE 0.0275 // (mm) Minimum distance that will produce a move.
@@ -2990,7 +2990,7 @@
  * Enables G53 and G54-G59.3 commands to select coordinate systems
  * and G92.1 to reset the workspace to native machine space.
  */
-//#define CNC_COORDINATE_SYSTEMS
+#define CNC_COORDINATE_SYSTEMS
 
 /**
  * Auto-report temperatures with M155 S<seconds>
